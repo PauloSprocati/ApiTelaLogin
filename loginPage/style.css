@@ -1,0 +1,96 @@
+/* Reset básico para garantir consistência */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    /* Fundo em degradê que combina com o azul da interface */
+    background: linear-gradient(135deg, #0056b3, #007bff);
+  }
+  
+  .login-container {
+    width: 400px;
+    background: #e6e6e6;
+    border-radius: 10px;
+    padding: 40px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  .login-container h2 {
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  .login-container p {
+    margin-bottom: 20px;
+    color: #666;
+  }
+  
+  .login-container form {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+  }
+  
+  .login-container input {
+    width: 100%;
+    margin: 10px 0;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: all 0.3s ease;
+  }
+  
+  .login-container input:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+    outline: none;
+  }
+  
+  .login-container button {
+    width: 100%;
+    margin: 10px 0;
+    padding: 12px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .login-container button:hover {
+    background-color: #0056b3;
+    transform: scale(1.02);
+  }
+
+  .login-container input{
+  width: 100%;
+  margin: 10px 0;
+  padding: 12px 15px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #f9f9f9;  /* Fundo sutil para quebrar o aspecto "cru" */
+  font-size: 16px;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+}
+
+.login-container input:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 8px rgba(0, 123, 255, 0.4);
+  background-color: #fff;  /* Deixa o input mais "ativo" ao focá-lo */
+  outline: none;
+}
+
+  
