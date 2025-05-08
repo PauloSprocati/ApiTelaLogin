@@ -5,16 +5,18 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Tela de Login</title>
   <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </head>
 <body>
   <div class="login-container">
     <h2>Bem-Vindo de volta!</h2>
     <p>Entre com sua conta</p>
-    <form>
-      <input type="email" placeholder="Email" required>
-      <input type="password" placeholder="Senha" required>
+    <form id="loginForm">
+      <input type="email" id="email" placeholder="Email" required>
+      <input type="password" id="senha" placeholder="Senha" required>
       <button type="submit">ENTRAR</button>
     </form>
   </div>
+  <script src="script.js"></script>
 </body>
 </html>
